@@ -1,15 +1,8 @@
-## Getting Started
+## Account Abstraction ERC4337 Smart Wallet YouTube Tutorial
 
-Create a project using this example:
+[Account Abstraction ERC4337 - Build your own smart wallets quick and simple](https://youtu.be/xmz7c7rl9cM)
 
-```bash
-npx thirdweb create --template next-typescript-starter
-```
-
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-On `pages/_app.tsx`, you'll find our `ThirdwebProvider` wrapping your app, this is necessary for our [hooks](https://portal.thirdweb.com/react) and
-[UI Components](https://portal.thirdweb.com/ui-components) to work.
+Learn how to implement ERC4337 smart wallets to your app. Do this quick and easy with ConnectWallet UI component or learn how to build your own login flow and take advantage of the features offered with smart wallets.
 
 ## Environment Variables
 
