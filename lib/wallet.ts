@@ -1,13 +1,10 @@
 import { ThirdwebSDK, isContractDeployed } from "@thirdweb-dev/sdk";
 import { SmartWallet, LocalWallet } from "@thirdweb-dev/wallets";
-import { Mumbai } from "@thirdweb-dev/chains";
 import { MONSTER_CONTRACT_ADDRESS, TOKEN_CONTRACT_ADDRESS } from "../const/addresses";
-
-const chain = Mumbai;
 
 export function createSmartWallet(): SmartWallet {
     const smartWallet = new SmartWallet({
-        chain: "mumbai",
+        chain: "<chain_id>",
         factoryAddress: "0x7326134435f0032eEe8E113Caa5Fc71595f9f4C8",
         gasless: true,
         clientId: process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID,
@@ -32,7 +29,7 @@ export async function connectSmartWallet(
 
     const sdk = await ThirdwebSDK.fromWallet(
         smartWallet,
-        chain,
+        "<chain_id>",
         {
             clientId: process.env.NEXT_PUBLIC_TEMPLATE_CLIENT_ID,
         }
